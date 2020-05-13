@@ -27,15 +27,19 @@ const player = {
             this.direction = 'positive';
         }
     },
+    
+    printLocation(){
+        console.log(this.position);
+    },
 };
 
 player.moveForward(5);
 player.moveBackward(3);
-console.log(player.position);
+printLocation();
 player.turnAround();
 player.moveForward(10);
 player.moveBackward(5);
-console.log(player.position);
+printLocation();
 }());
 
 
